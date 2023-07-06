@@ -1,3 +1,16 @@
 #!/usr/bin/python3
-class LockedClass:
-    __slots__ = ['first_name']
+"""This is an example module.
+
+This module demonstrates how to add documentation to a module and a function.
+"""
+
+def my_function(x):
+    """Returns the square of x.
+
+    Args:
+        x (int): The number to square.
+
+    Returns:
+        int: The square of x.
+    """
+    return x * x
