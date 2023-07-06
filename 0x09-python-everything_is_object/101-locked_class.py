@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""This is an example module.
-
-This module demonstrates how to add documentation to a module and a function.
+"""This module demonstrates how to add documentation to a
+module and a function.
 """
+
 
 def my_function(x):
     """Returns the square of x.
