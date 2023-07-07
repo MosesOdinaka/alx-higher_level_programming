@@ -1,0 +1,36 @@
+"""
+This is a test file for the text_indentation function.
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Quonam modo?"
+>>> cultural and social initiatives. The escapes from the memory of
+the horrors of the past. But it is all true. The records are there
+to prove it. But no one remembers. The world goes on as if nothing
+had happened. And those who remember are vilified and called liars.
+It is an important book, the book of memory, and without it, man
+would have no conscience.
+
+>>> text_indentation(text)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+Quonam modo?
+
+>>> text = "Hello: World"
+>>> text_indentation(text)
+Hello:
+
+World
+
+>>> text = "Hello. World"
+>>> text_indentation(text)
+Hello.
+
+World
+
+>>> text_indentation(12)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
+"""
