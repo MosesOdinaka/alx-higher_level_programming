@@ -7,12 +7,12 @@ import turtle
 
 
 class Base:
-    """Base model.
-
-    This Represents the "base" for all other classes in project 0x0C*.
+    """
+    Base model.
+    This will represent the "base" for all other classes in this project.
 
     Private Class Attributes:
-        __nb_object (int): Number of instantiated Bases.
+    __nb_object (int): Number of instantiated Bases.
     """
 
     __nb_objects = 0
@@ -21,7 +21,7 @@ class Base:
         """Initialize a new Base.
 
         Args:
-            id (int): The identity of the new Base.
+            id (int): The new Base identity.
         """
         if id is not None:
             self.id = id
