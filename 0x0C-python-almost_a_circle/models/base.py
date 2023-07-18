@@ -21,7 +21,7 @@ class Base:
         """Initialize a new Base.
 
         Args:
-            id (int): The new Base identity.
+            id: The new Base identity.
         """
         if id is not None:
             self.id = id
@@ -31,10 +31,10 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        """Return the JSON serialization of a list of dicts.
+        """Returns the JSON string representation of list_dictionariess.
 
         Args:
-            list_dictionaries (list): A list of dictionaries.
+            list_dictionaries: A list of dictionaries.
         """
         if list_dictionaries is None or list_dictionaries == []:
             return "[]"
@@ -42,10 +42,10 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """Write the JSON serialization of a list of objects to a file.
+        """Write the JSON string representation of list_objs to a file.
 
         Args:
-            list_objs (list): A list of inherited Base instances.
+            list_objs: A list of inherited Base instances.
         """
         filename = cls.__name__ + ".json"
         with open(filename, "w") as jsonfile:
@@ -57,10 +57,10 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
-        """Return the deserialization of a JSON string.
+        """Returns the list of the JSON string representation json_string.
 
         Args:
-            json_string (str): A JSON str representation of a list of dicts.
+            json_string: A JSON str representation of a list of dicts.
         Returns:
             If json_string is None or empty - an empty list.
             Otherwise - the Python list represented by json_string.
@@ -71,10 +71,10 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        """Return a class instantied from a dictionary of attributes.
+        """Returns an instance with all attributes already set.
 
         Args:
-            **dictionary (dict): Key/value pairs of attributes to initialize.
+            **dictionary: Key/value pairs of attributes to initialize.
         """
         if dictionary and dictionary != {}:
             if cls.__name__ == "Rectangle":
@@ -86,8 +86,7 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        """Return a list of classes instantiated from a file of JSON strings.
-
+        """Returns a list of instances.
         Reads from `<cls.__name__>.json`.
 
         Returns:
