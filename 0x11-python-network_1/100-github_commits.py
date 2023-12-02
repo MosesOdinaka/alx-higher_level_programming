@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""A script that retrieve 10 first commit sorted on rails repo from user rails"""
+"""A script that retrieve 10 first commit sorted on rails repo from user rails
+"""
 
 import requests
 import sys
