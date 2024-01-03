@@ -7,7 +7,7 @@ const filePath = process.argv[2];
 const fileContent = process.argv[3];
 
 // Define the callback function
-function handleError(error) {
+function handleError (error) {
   if (error) console.log(error);
 }
 

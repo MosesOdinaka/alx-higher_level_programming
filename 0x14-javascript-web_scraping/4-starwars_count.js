@@ -6,7 +6,7 @@ const httpRequest = require('request');
 const apiUrl = process.argv[2];
 
 // Define the callback function
-function countCharacters(error, response, responseBody) {
+function countCharacters (error, response, responseBody) {
   if (error) console.log(error);
   let characterList = [];
   for (const movie of JSON.parse(responseBody).results) {

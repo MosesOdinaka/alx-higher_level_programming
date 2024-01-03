@@ -7,7 +7,7 @@ const filePath = process.argv[2];
 const encodingType = 'utf-8';
 
 // Define the callback function
-function displayFileContent(err, fileContent) {
+function displayFileContent (err, fileContent) {
   console.log(err || fileContent);
 }
 

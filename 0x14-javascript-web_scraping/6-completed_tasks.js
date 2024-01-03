@@ -6,7 +6,7 @@ const httpRequest = require('request');
 const apiUrl = process.argv[2];
 
 // Define the callback function
-function countCompletedTasks(error, response, responseBody) {
+function countCompletedTasks (error, response, responseBody) {
   if (!error) {
     const tasks = JSON.parse(responseBody);
     const completedTasks = {};

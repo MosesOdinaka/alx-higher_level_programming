@@ -6,7 +6,7 @@ const httpRequest = require('request');
 const filmUrl = 'http://swapi.co/api/films/' + process.argv[2];
 
 // Define the callback function
-function displayFilmTitle(error, httpResponse, responseBody) {
+function displayFilmTitle (error, httpResponse, responseBody) {
   console.log(JSON.parse(responseBody).title || error);
 }
 

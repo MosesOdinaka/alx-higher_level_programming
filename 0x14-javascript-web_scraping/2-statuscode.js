@@ -6,7 +6,7 @@ const httpRequest = require('request');
 const url = process.argv[2];
 
 // Define the callback function
-function logStatusCode(response) {
+function logStatusCode (response) {
   console.log(`Status code: ${response.statusCode}`);
 }
 
